@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple 1 column template</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(78, 78, 78);
+            background-color: rgb(239, 240, 233);
+            margin: 0;
+            padding: 0;
+        }
+
+        h1,
+        h2 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #526380;
+        }
+
+        ul,
+        ol,
+        dl {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        #wrapper {
+            background-color: rgb(255, 255, 255);
+            max-width: 1320px;
+            margin: 0 auto;
+        }
+
+        header,
+        nav,
+        main,
+        footer {
+            padding: 1em;
+            /* outline: 1px solid red; */
+        }
+
+        a {
+            margin-right: 1em;
+        }
+
+        nav,
+        footer {
+            background-color: rgb(223, 228, 237);
+        }
+.hero_image{
+    height: 300px;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #ccc;
+    background-image: url(img/milky-way-1320x300.jpg);
+    background-repeat: no-repeat;
+    background-position: center top; */
+    background:#274a8e url(img/milky-way-1320x300.jpg) no-repeat center top;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+.hero_text{
+color:#ffffff;
+font-size: 3rem;
+text-align: center;
+}
+
+/* add this */
+
+.image1{
+    /*height: 800px;
+    width: auto;*/
+    float:right;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    float: right;
+    margin-left: 1em;
+}
+/* do one of these */
+article{
+    overflow: hidden;
+}
+
+footer{
+    clear:both;
+}
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header class="hero_image">
+            <h1 class="hero_text">This is about Images</h1>
+        </header>
+        <nav>
+            <a href="#">Page 1</a>
+            <a href="#">Page 2</a>
+        </nav>
+        <main>
+            <article>
+                <h2>This is an article about how it's cool to code.</h2>
+                <img src="img/code_640x360.jpg" alt="code" height="360" width="640" class="image1">
+                <p>This is the content. You don't have to be a nerd to code, but it helps.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed maxime delectus ipsa, eos enim libero
+                    ea obcaecati consequuntur vel nihil.</p>
+                <p>Totam excepturi sed placeat ipsum! Assumenda soluta laudantium natus aperiam. Ab maiores ut veritatis
+                    mollitia laudantium asperiores nemo pariatur aliquam.</p>
+                <p>Obcaecati, officia ut ad, ratione, repellendus accusantium commodi repudiandae iste maiores assumenda
+                    accusamus in ipsum laborum aliquid quam eveniet neque!</p>
+                    <!-- Delete the last 2 paragraphs -->
+                
+            </article>
+        </main>
+        <footer><a href="https://www.w3.org">Go to the W3C</a></footer>
+    </div>
+</body>
+
+</html>
